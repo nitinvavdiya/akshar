@@ -24,6 +24,7 @@
     <body>
         <%
             String masterStockId=request.getParameter("id");
+            //test
         %>
         <br/>
         <h1 style="text-align: center">Ha ha ha, i have your ID=<%=masterStockId%></h1>
