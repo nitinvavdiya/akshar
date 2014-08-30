@@ -1,7 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package my;
 
 import java.io.IOException;
@@ -55,7 +52,7 @@ public class ChartMgnt extends HttpServlet {
                      if(ans>=0){
                          json.put("msg", "chart added");
                         // out.println(json);
-                         
+                  
                          response.sendRedirect(request.getContextPath()+"/jsp/chart_mgnt.jsp");
                      }
                  }else if(actiontype==4){
@@ -69,7 +66,7 @@ public class ChartMgnt extends HttpServlet {
                      }
                      out.println(color);
                  }else if(actiontype==2){
-                     //update color
+                     //upda
                      System.out.println("update chart");
                      String id = request.getParameter("chart_id");
                      String query="update tblchart set name='"+request.getParameter("chartname")+"' where chart_id="+id;
@@ -79,6 +76,10 @@ public class ChartMgnt extends HttpServlet {
                  }
                  
             }
+            
+            
+            ///this is test for amit
+            System.out.println("test");
            
         }catch(Exception e){
         }finally {            
